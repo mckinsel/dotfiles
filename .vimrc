@@ -2,12 +2,15 @@
 " Presented at PyCon APAC 2012
 
 set nocompatible
+set encoding=utf-8
 
 set rtp+=~/.vim/bundle/Vundle.vim
 call vundle#begin()
 Plugin 'gmarik/Vundle.vim'
 Plugin 'Valloric/YouCompleteMe'
 call vundle#end()
+
+execute pathogen#infect()
 
 let g:ycm_complete_in_comments = 0
 let g:ycm_confirm_extra_conf = 0
